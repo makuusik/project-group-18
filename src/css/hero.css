@@ -1,0 +1,111 @@
+/* Upload Fonts */
+@font-face {
+    font-family: 'Epilogue';
+    src: url(../fonts/Epilogue-Light.woff2), url(../fonts/Epilogue-Light.woff),
+        url(../fonts/Epilogue-Light.ttf);
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url(../fonts/Epilogue-Regular.woff2), url(../fonts/Epilogue-Regular.woff),
+        url(../fonts/Epilogue-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Epilogue';
+    src: url(../fonts/Epilogue-SemiBold.woff2),
+        url(../fonts/Epilogue-SemiBold.woff), url(../fonts/Epilogue-SemiBold.ttf);
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+/* var - for base colors */
+:root {
+    --main-color: #141414;
+    --accent-color: #1e2827;
+    --sec-text-color: #ffffff;
+}
+
+/* Added (font-weight/size/height) The most frequently used */
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.list {
+    list-style: none;
+}
+
+.container {
+    max-width: 428px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------HERO-------------*/
+
+
+.hero {}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-main {
+
+
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--sec-text-color);
+}
+
+.hero-slider {}
+
+.hero-text {
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--sec-text-color);
+}
+
+.hero-picture {}
