@@ -51,6 +51,11 @@ img {
     .section-first {
         width: 335px;
     }
+
+    img {
+        width: 335px;
+        height: 365px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -92,7 +97,7 @@ img {
         margin-bottom: 0;
     }
 
-    img{
+    img {
         width: 704px;
         height: 465px;
     }
@@ -112,15 +117,15 @@ img {
         gap: 40px;
     }
 
-    .first-text{
+    .first-text {
         min-width: 439px;
     }
 
-    .second-text{
+    .second-text {
         min-width: 380px;
     }
 
-    img{
+    img {
         margin-left: auto;
         width: 892px;
         height: 500px;
