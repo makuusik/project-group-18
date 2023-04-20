@@ -1,3 +1,32 @@
+/* Upload Fonts */
+@font-face {
+  font-family: 'Epilogue';
+  src: url(../fonts/Epilogue-Light.woff2), url(../fonts/Epilogue-Light.woff),
+    url(../fonts/Epilogue-Light.ttf);
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url(../fonts/Epilogue-Regular.woff2), url(../fonts/Epilogue-Regular.woff),
+    url(../fonts/Epilogue-Regular.ttf);
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Epilogue';
+  src: url(../fonts/Epilogue-SemiBold.woff2),
+    url(../fonts/Epilogue-SemiBold.woff), url(../fonts/Epilogue-SemiBold.ttf);
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+/* Import Styles */
 @import url(./header.css);
 @import url(./hero.css);
 @import url(./section1.css);
@@ -5,4 +34,18 @@
 @import url(./section3.css);
 @import url(./section4.css);
 @import url(./footer.css);
-@import url(./header.css);
+
+/* var - for base colors */
+:root {
+  --main-color: #141414;
+  --accent-color: #1e2827;
+  --sec-text-color: #ffffff;
+}
+
+/* Added (font-weight/size/height) The most frequently used */
+body {
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+}
