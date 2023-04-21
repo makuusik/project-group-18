@@ -1,5 +1,8 @@
-div {
+.div {
   display: block;
+}
+.link {
+  text-decoration: none;
 }
 
 .catalog-list {
@@ -19,6 +22,7 @@ div {
   font-size: 32px;
   line-height: calc(40 / 32);
   letter-spacing: -0.02em;
+  padding-bottom: 40px;
 }
 
 .wrapper {
@@ -27,4 +31,72 @@ div {
 }
 .catalog-list-text {
   max-width: 335px;
+}
+.catalog-list-item {
+  width: 100%;
+}
+.overlay {
+  background-color: var(--accent-color);
+  color: var(--sec-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(0, 100%);
+  content: '';
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-top: 40px;
+  padding-right: 59px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  top: 0;
+  left: 0;
+}
+
+.catalog-item:hover .overlay,
+.catalog-item:focus .overlay {
+  transform: translate(0, 0);
+  content: '';
+}
+.catalog-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-item-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.overlay-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+}
+.overlay-title {
+  margin-bottom: 10px;
+}
+.heart-icon {
+  display: flex;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.overlay-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 14px;
 }
