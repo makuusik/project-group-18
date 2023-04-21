@@ -1,0 +1,41 @@
+.section-name {
+  font-weight: 300;
+  font-size: 12px;
+  color: rgba(20, 20, 20, 0.4);
+  padding-bottom: 8px;
+}
+.section-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: calc(-0.02 * 32px);
+  padding-bottom: 40px;
+}
+.photo {
+  margin-bottom: 20px;
+}
+@media screen and (min-width:375px){
+    .container{
+        width: 375px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+  .container{
+    width: 767px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    line-height: 1.37;
+    width: 448px;
+    letter-spacing: calc(-0.02 * 40px);
+  }
+
+  .container-flex {
+    display: flex;
+    gap: 20px;
+  }
+}
