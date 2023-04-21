@@ -37,40 +37,40 @@
     line-height: 44px;
     width: 448px;
     letter-spacing: -0.02em;
-    margin-left: 12px;
   }
-   .section-name{
-    margin-left: 12px;
-   }
+
   .container-flex {
     flex-wrap: nowrap;
     justify-content: center;
-    /* width: 704px; */
+    width: 704px;
   }
- 
 }
-@media screen and (min-width: 768px) and (max-width:1279px){
-    .photo{
-        width: 342px;
-      }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .photo {
+    width: 342px;
+  }
+
+  .section .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 @media screen and (min-width: 1280px) {
   .container {
     width: 1176px;
+    
   }
-  .section-name{
-    margin-left: 0;
-}
+
   .section-title {
     margin-bottom: 80px;
-    margin-left: 0;
   }
   .container-flex {
     justify-content: center;
     gap: 24px;
-     width: 1176px; 
+    width: 1176px;
+   
   }
-  .photo{
+  .photo {
     min-width: 576px;
   }
 }
