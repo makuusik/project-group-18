@@ -1,0 +1,30 @@
+.hero {}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-main {
+
+
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--sec-text-color);
+}
+
+.hero-slider {}
+
+.hero-text {
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--sec-text-color);
+}
+
+.hero-picture {}
