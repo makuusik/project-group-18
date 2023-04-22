@@ -1,4 +1,4 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="backdrop" data-modal>
   <div class="modal-wrap">
     <button type="button" class="modal-close-btn" data-modal-close>
       <svg class="modal-close-btn-icon">
@@ -12,12 +12,12 @@
         src="../img/product-01-1x.jpg"
         alt="photo Tube Watch S42"
         width="276"
-        height="325"
+        height="274"
       />
       <h3 class="product-title">Tube Watch S42 Date Steel With Black Case</h3>
       <p class="price">€395</p>
     </div>
-    <form>
+    <form class="form">
       <label class="label"
         ><span class="text-label">Full name</span>
         <span class="label-form-wrap">
@@ -38,7 +38,7 @@
             type="email"
             class="modal-input"
             name="user_email"
-            placeholder="Enter your full email"
+            placeholder="Enter your email"
             pattern="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$;"
             required
           />
@@ -55,7 +55,7 @@
           />
         </span>
       </label>
-      <label
+      <label class="textarea"
         ><span class="text-label">Comments</span>
         <textarea
           name="user_message"
