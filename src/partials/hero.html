@@ -1,62 +1,54 @@
 <section class="hero">
   <div class="hero-container container">
-    <p2 class="hero-main">Welcome to our collection of premium watches</p2>
-    <img
-      src="/src/img/mob-slider-01-1x.jpg"
-      alt=""
-      srcset=""
-      class="hero-slider"
-    />
+    <h2 class="hero-main">Welcome to our collection of premium watches</h2>
+    <picture class="hero-slider">
+      <source
+        media="(max-width: 275px)"
+        srcset="./img/mob-slider-01-1x.jpg 1x, ./img/mob-slider-01-2x.jpg 2x"
+      />
+      <source
+        media="(max-width: 768px)"
+        srcset="./img/slider-01-1x.jpg 1x, ./img/slider-01-1x.jpg 2x"
+      />
+      <img
+        class="hero-slider-img"
+        src="./img/slider-01-1x.jpg"
+        alt="watch in collection"
+      />
+    </picture>
+    <div class="hero-btn-counter">
+      <div class="hero-block-btn">
+        <button class="hero-btn" type="submit"></button>
+        <button class="hero-btn" type="submit"></button>
+      </div>
+      <div class="hero-block-counter">
+        <span class="hero-counter">1</span>
+        <span class="hero-counter">5</span>
+      </div>
+    </div>
     <p class="hero-text">
       Our watches are not just timepieces, but also an expression of your
       personality and lifestyle. From classic designs to modern ones, we have a
       watch to suit every taste and occasion.
     </p>
-    <img
-      src="/src/img/img-mob-hero-1x.jpg"
-      alt=""
-      srcset=""
-      class="hero-pice"
-    />
+    <picture class="hero-picture">
+      <source
+        media="(max-width: 275px)"
+        srcset="./img/img-mob-hero-1x.jpg 1x, ./img/img-mob-hero-2x.jpg 2x"
+      />
+      <source
+        media="(max-width: 768px)"
+        srcset="./img/img-tab-hero-1x.jpg 1x, ./img/img-tab-hero-2x.jpg 2x"
+      />
+      <source
+        media="(max-width: 1280px)"
+        srcset="./img/img-pc-hero-1x.jpg 1x, ./img/img-pc-hero-2x.jpg 2x"
+      />
+      <img
+        class="hero-picture-img"
+        src="./img/img-pc-hero-1x.jpg"
+        alt="watch on her hand"
+      />
+    </picture>
   </div>
 </section>
-
-<img
-  srcset="./images/team_card_1.jpg 1x, ./images/team_card_1_2x.jpg 2x"
-  src="./images/team_card_1.jpg"
-  alt="Mark"
-  width="264"
-  height="260"
-/>
-
-<picture>
-  <source
-    srcset="https://picsum.photos/id/237/400/600"
-    media="(max-width: 600px)"
-  />
-  <source
-    srcset="https://picsum.photos/id/237/800/400"
-    media="(min-width: 601px)"
-  />
-  <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy" />
-</picture>
-
-<picture>
-  <source
-    srcset="
-      https://picsum.photos/id/237/400/600  400w,
-      https://picsum.photos/id/237/800/1200 800w
-    "
-    media="(max-width: 600px)"
-    sizes="(min-width: 480px) 480px, 100vw"
-  />
-  <source
-    srcset="
-      https://picsum.photos/id/237/800/400   800w,
-      https://picsum.photos/id/237/1600/800 1600w
-    "
-    media="(min-width: 601px)"
-    sizes="(min-width: 800px) 800px, 100vw"
-  />
-  <img src="https://picsum.photos/id/237/300/200" alt="Cute puppy" />
-</picture>
