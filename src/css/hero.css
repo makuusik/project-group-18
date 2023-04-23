@@ -9,6 +9,10 @@
 
 }
 
+.container {
+    max-width: 365px;
+}
+
 .hero-main {
     margin-bottom: 60px;
 
@@ -89,13 +93,13 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        max-width: 768px;
+        max-width: 734px;
     }
 
     .hero-container {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
 
     }
 
@@ -131,7 +135,7 @@
 
 @media screen and (min-width: 1280px) {
     .container {
-        max-width: 1280px;
+        max-width: 1206px;
     }
 
     .hero {}
