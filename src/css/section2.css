@@ -7,9 +7,7 @@
 .catalog-list {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
+  row-gap: 40px;
 }
 
 .catalog-section {
@@ -35,6 +33,10 @@
   line-height: calc(18 / 14);
   letter-spacing: -0.02em;
   color: #141414;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 14px;
 }
 .euro-price {
   font-weight: 400;
@@ -43,9 +45,9 @@
   letter-spacing: -0.02em;
   color: rgba(20, 20, 20, 0.5);
 }
-.catalog-list-item {
+/* .catalog-list-item {
   width: 100%;
-}
+} */
 .overlay {
   background-color: var(--accent-color);
   color: var(--sec-text-color);
@@ -116,14 +118,11 @@
 .picture-flex {
   display: flex;
   justify-content: center;
+  padding: 43px 30px;
 }
 .catalog-item:hover .heart-icon,
 .catalog-item:focus .heart-icon {
   opacity: 1;
-}
-
-.catalog-list-item:nth-child(n + 9) {
-  display: none;
 }
 
 .button-buy {
@@ -146,18 +145,72 @@
   border: white;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .catalog-section {
-    max-width: 365px;
+    max-width: 375px;
+  }
+
+  .catalog-list-text {
+    width: 335px;
+  }
+  .catalog-list-item:nth-child(n + 9) {
+    display: none;
   }
 }
+
 @media screen and (min-width: 768px) {
   .catalog-section {
-    max-width: 704px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 768px;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
   }
   .catalog-list {
-    flex-basis: calc((100% - 64px) / 2);
+    flex-wrap: wrap;
+    column-gap: 32px;
+    flex-direction: row;
+  }
+  .catalog-list-text {
+    width: 335px;
+  }
+  .catalog-list-item {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  .catalog-list-item:nth-child(n + 9) {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .catalog-section {
+    max-width: 1440px;
+    padding-left: 132px !important;
+    padding-right: 132px !important;
+  }
+  .catalog-list {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 60px;
+    flex-direction: row;
+  }
+  .catalog-list-item {
+    flex-basis: calc((100% - 24px) / 4);
+  }
+  .catalog-list-item:nth-child(n + 9) {
+    display: block;
+  }
+  .catalog-list-text {
+    width: 276px;
+  }
+  .picture-flex {
+    padding-top: 26px;
+    padding-bottom: 25px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .overlay {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
   }
 }
