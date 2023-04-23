@@ -57,8 +57,7 @@
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1176px;
-    
+    width: 1206px;
   }
 
   .section-title {
@@ -68,7 +67,6 @@
     justify-content: center;
     gap: 24px;
     width: 1176px;
-   
   }
   .photo {
     min-width: 576px;
