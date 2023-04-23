@@ -25,6 +25,11 @@
   .container {
     width: 365px;
   }
+
+  .photo {
+    width: 335px;
+    height: 260px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -48,6 +53,7 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .photo {
     width: 342px;
+    height: 260px;
   }
 
   .section .container {
@@ -68,7 +74,9 @@
     gap: 24px;
     width: 1176px;
   }
+
   .photo {
-    min-width: 576px;
+    width: 576px;
+    height: 422px;
   }
 }
