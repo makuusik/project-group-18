@@ -1,0 +1,170 @@
+.hero {
+    background-color: var(--main-color);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+
+}
+
+.container {
+    max-width: 365px;
+}
+
+.hero-main {
+    margin-bottom: 60px;
+
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+    color: var(--sec-text-color);
+}
+
+.hero-slider-counter {
+    width: 266px;
+    margin-bottom: 40px;
+}
+
+.hero-slider {
+    display: block;
+    height: 200px;
+    width: 266px;
+    margin-bottom: 20px;
+}
+
+.hero-slider-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+.hero-btn-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-block-btn {}
+
+.hero-btn {
+    height: 32px;
+    width: 32px;
+}
+
+.hero-block-counter {}
+
+.hero-counter {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--sec-text-color);
+}
+
+.hero-text {
+    align-self: flex-end;
+    width: 248px;
+    margin-bottom: 40px;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    color: var(--sec-text-color);
+}
+
+.hero-picture {
+    height: 410px;
+    width: 335px;
+}
+
+.hero-picture-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+
+    object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 734px;
+    }
+
+    .hero-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+    }
+
+    .hero-main {
+        width: 653px;
+        font-size: 60px;
+        line-height: 1.03;
+        letter-spacing: -0.04em;
+    }
+
+    .hero-slider-counter {
+        width: 436px;
+    }
+
+    .hero-slider {
+        height: 255px;
+        width: 436px;
+    }
+
+    .hero-text {
+        align-self: flex-start;
+        width: 248px;
+        margin-left: 20px;
+        margin-top: 71px;
+        margin-bottom: 0;
+    }
+
+    .hero-picture {
+        width: 704px;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        max-width: 1206px;
+    }
+
+    .hero {}
+
+    .hero-container {
+        justify-content: space-between;
+    }
+
+    .hero-main {
+        width: 750px;
+    }
+
+    .hero-slider-counter {
+        align-self: flex-end;
+        order: 3;
+        margin-bottom: 0;
+    }
+
+    .hero-text {
+        order: 2;
+        margin-top: 0;
+        width: 282px;
+        margin-left: 0;
+    }
+
+    .hero-picture {
+        order: 4;
+        width: 676px;
+        height: 394px;
+    }
+
+}
