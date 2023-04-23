@@ -1,39 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Watch Spot</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <!-- HEADER (DMITRIY) -->
-    <load src="partials/header.html" />
 
-    <main>
-      <!-- HERO (TARAS) -->
-      <!-- Mobile menu (You must connect it yourself) -->
-      <load src="partials/hero.html" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Watch Spot</title>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-      <!-- SECTION-1 (VATALIY) -->
-      <load src="partials/section1.html" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
 
-      <!-- SECTION 2 (OLEG) -->
-      <load src="partials/section2.html" />
+<body>
+  <!-- HEADER (DMITRIY) -->
+  <load src="partials/header.html" />
 
-      <!-- SECTION 3 (VICTORIA) -->
-      <load src="partials/section3.html" />
+  <main>
+    <!-- HERO (TARAS) -->
+    <!-- Mobile menu (You must connect it yourself) -->
+    <load src="partials/hero.html" />
 
-      <!-- SECTION 4 (ALEXANDR) -->
-      <load src="partials/section4.html" />
-    </main>
+    <!-- SECTION-1 (VATALIY) -->
+    <load src="partials/section1.html" />
 
-    <!-- FOOTER (DMITRIY) -->
-    <load src="partials/footer.html" />
-  </body>
+    <!-- SECTION 2 (OLEG) -->
+    <load src="partials/section2.html" />
+
+    <!-- SECTION 3 (VICTORIA) -->
+    <load src="partials/section3.html" />
+
+    <!-- SECTION 4 (ALEXANDR) -->
+    <load src="partials/section4.html" />
+  </main>
+
+  <!-- FOOTER (DMITRIY) -->
+  <load src="partials/footer.html" />
+
+
+  <!---SWIPER.JS-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!--INITIALIZE SWIPER-->
+  <script>
+    const swiper = new Swiper(" .mySLiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      Loon: true
+      keyboard: {
+        enabled: true,
+      }
+      navigation: {
+        nextEl: ".button-next",
+        prevEl: ".button-prev",
+      }
+    });
+  </script>
+</body>
+
 </html>
