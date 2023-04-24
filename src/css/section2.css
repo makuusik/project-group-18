@@ -16,7 +16,7 @@
 }
 
 .catalog-title {
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 32px;
   line-height: calc(40 / 32);
   letter-spacing: -0.02em;
@@ -153,6 +153,7 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .catalog-section {
     max-width: 365px;
+    padding-bottom: 80px;
   }
 
   .catalog-list-text {
@@ -175,6 +176,7 @@
 @media screen and (min-width: 768px) {
   .catalog-section {
     max-width: 734px;
+    padding-bottom: 128px;
   }
   .catalog-list {
     flex-wrap: wrap;
@@ -204,6 +206,11 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1206px;
+  }
+
+  .catalog-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .catalog-list {
