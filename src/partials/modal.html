@@ -1,0 +1,77 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal-wrap">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="modal-close-btn-icon">
+        <use href="../img/icons.svg#icon-x"></use>
+      </svg>
+    </button>
+    <div class="product-description">
+      <img
+        class="product-description-img"
+        srcset="../img/product-01-2x.jpg 2x"
+        src="../img/product-01-1x.jpg"
+        alt="photo Tube Watch S42"
+        width="276"
+        height="274"
+      />
+      <h3 class="product-title">Tube Watch S42 Date Steel With Black Case</h3>
+      <p class="price">€395</p>
+    </div>
+    <form class="form">
+      <label class="label"
+        ><span class="text-label">Full name</span>
+        <span class="label-form-wrap">
+          <input
+            type="text"
+            class="modal-input"
+            name="user_name"
+            placeholder="Enter your full name"
+            pattern=".{3,25}"
+            required
+          />
+        </span>
+      </label>
+      <label class="label"
+        ><span class="text-label">Email</span>
+        <span class="label-form-wrap">
+          <input
+            type="email"
+            class="modal-input"
+            name="user_email"
+            placeholder="Enter your email"
+            pattern="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$;"
+            required
+          />
+        </span>
+      </label>
+      <label class="label"
+        ><span class="text-label">Card number</span>
+        <span class="label-form-wrap">
+          <input
+            type="number"
+            class="modal-input"
+            name="user_card"
+            placeholder="Enter card"
+          />
+        </span>
+      </label>
+      <label class="textarea"
+        ><span class="text-label">Comments</span>
+        <textarea
+          name="user_message"
+          placeholder="Enter your text"
+          class="label-form-message"
+        ></textarea>
+      </label>
+
+      <button type="submit" class="modal-btn">submit</button>
+      <div class="privacy-wrap">
+        <p class="privacy-text">
+          By clicking on “Send message” button, you agree to our
+          <a class="privacy-link" href="">Privacy Policy</a>, and allow Promodo
+          to use this information for marketing purposes.
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
