@@ -1,9 +1,11 @@
 :root {
   --duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 button {
   cursor: pointer;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -14,6 +16,7 @@ button {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity var(--duration), visibility var(--duration);
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -28,7 +31,7 @@ button {
   width: 335px;
   max-width: 100%;
   padding: 40px 20px;
-  background-color: #fff;
+  background-color: var(--sec-text-color);
   box-shadow: 0px 0px 223px rgba(0, 0, 0, 0.05),
     0px 0px 130.6px rgba(0, 0, 0, 0.037963),
     0px 0px 71.0296px rgba(0, 0, 0, 0.0303704),
@@ -48,6 +51,7 @@ button {
   border: transparent;
   background-color: transparent;
 }
+
 .modal-close-btn-icon {
   width: 10px;
   height: 10px;
@@ -58,6 +62,7 @@ button {
 .modal-close-btn:focus .modal-close-btn-icon {
   fill: var(--accent-color);
 }
+
 .product-description {
   display: flex;
   flex-direction: column;
@@ -65,6 +70,7 @@ button {
   padding-left: 10px;
   margin-bottom: 40px;
 }
+
 .product-description-img {
   width: 275px;
   height: 325px;
@@ -85,6 +91,7 @@ button {
   text-overflow: ellipsis;
   max-width: 256px;
 }
+
 .price {
   font-weight: 400;
   font-size: 12px;
@@ -92,10 +99,12 @@ button {
   letter-spacing: -0.02em;
   color: rgba(20, 20, 20, 0.5);
 }
+
 .label {
   display: block;
   margin-bottom: 18px;
 }
+
 .text-label {
   display: inline-block;
   font-weight: 400;
@@ -105,6 +114,7 @@ button {
   color: var(--main-color);
   margin-bottom: 12px;
 }
+
 .modal-input {
   transition: border-color var(--duration);
   width: 100%;
@@ -129,12 +139,15 @@ button {
   letter-spacing: -0.02em;
   color: rgba(20, 20, 20, 0.5);
 }
+
 input:not(:placeholder-shown):valid {
   border-color: rgb(15, 60, 35);
 }
+
 input:not(:placeholder-shown):invalid {
   border-color: #9f0101;
 }
+
 .textarea {
   display: block;
   margin-bottom: 20px;
