@@ -7,6 +7,7 @@
 @import url('./section3.css');
 @import url('./section4.css');
 @import url('./footer.css');
+@import url('./modal.css');
 
 /* Upload Fonts */
 @font-face {
@@ -52,7 +53,6 @@ body {
 }
 
 /* Some tools */
-
 h1,
 h2,
 h3,
@@ -71,9 +71,9 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: block;
-  height: auto;
+  /* height: auto; */
 }
 
 .list {

@@ -25,6 +25,15 @@
   .container {
     width: 365px;
   }
+
+  .photo {
+    width: 335px;
+    height: 260px;
+  }
+
+  .section-new-watches {
+    padding-bottom: 80px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -44,10 +53,16 @@
     justify-content: center;
     width: 704px;
   }
+
+  .section-new-watches {
+    padding-bottom: 128px;
+  }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .photo {
     width: 342px;
+    height: 260px;
   }
 
   .section .container {
@@ -60,6 +75,11 @@
     width: 1206px;
   }
 
+  .section-new-watches {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
   .section-title {
     margin-bottom: 80px;
   }
@@ -68,7 +88,9 @@
     gap: 24px;
     width: 1176px;
   }
+
   .photo {
-    min-width: 576px;
+    width: 576px;
+    height: 422px;
   }
 }
