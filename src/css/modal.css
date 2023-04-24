@@ -5,7 +5,7 @@ button {
   cursor: pointer;
 }
 .backdrop {
-  /* position: fixed; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -36,6 +36,7 @@ button {
     0px 0px 18.1704px rgba(0, 0, 0, 0.0196296),
     0px 0px 8.77546px rgba(0, 0, 0, 0.012037);
 }
+
 .modal-close-btn {
   position: absolute;
   top: 12px;
@@ -65,8 +66,10 @@ button {
   margin-bottom: 40px;
 }
 .product-description-img {
-  padding-top: 26px;
-  padding-bottom: 39px;
+  width: 275px;
+  height: 325px;
+  /* padding-top: 26px; */
+  /* padding-bottom: 39px; */
   margin: 0;
 }
 
@@ -197,6 +200,10 @@ input:not(:placeholder-shown):invalid {
 
 /* ---------------- MEDIA -------------- */
 @media screen and (min-width: 375px) {
+  .product-description-img {
+    max-width: 276px;
+    height: 325px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal-wrap {
@@ -228,7 +235,8 @@ input:not(:placeholder-shown):invalid {
     margin: 0;
   }
   .product-description-img {
-    max-width: 276px;
+    width: 276px;
+    height: 325px;
   }
 
   .modal-input::placeholder {
@@ -255,11 +263,15 @@ input:not(:placeholder-shown):invalid {
 @media screen and (min-width: 1280px) {
   .modal-wrap {
     width: 904px;
+    padding: 40px;
     gap: 40px;
+    border-radius: 8px;
   }
+
   .label {
     margin-bottom: 24px;
   }
+
   .textarea {
     margin-bottom: 40px;
   }
