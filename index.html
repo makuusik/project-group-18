@@ -9,13 +9,56 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     
-    <script type="module" crossorigin src="/project-group-18/assets/index-908dd364.js"></script>
-    <link rel="stylesheet" href="/project-group-18/assets/index-3dc27548.css">
+    <script type="module" crossorigin src="/project-group-18/assets/index-d9ff10e4.js"></script>
+    <link rel="stylesheet" href="/project-group-18/assets/index-39df918c.css">
   </head>
+
   <body>
-    <!-- HEADER (DMITRIY) -->
-    <button
+    <header class="header">
+  <div class="container flex mob-container">
+    <nav class="header-menu flex">
+      <a class="header-logo flex" href="./index.html">
+        <div class="logo-img">
+          <svg class="logo-svg">
+            <use href="./img/mob-logo.svg"></use>
+          </svg>
+        </div>
+        <div>Thewatchsport</div>
+      </a>
+      <ul class="header-list list flex menu">
+        <li class="header-item">
+          <a class="header-link link" href="#About">About Us</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link link" href="#Catalog">Catalog</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link link" href="#Sale">Sale</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="" class="header-tel">+380 (68) 443-94-26</a>
+
+    <div class="container flex mob-menu">
+      <button
+        class="menu-toggle js-open-menu mob-btn"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="ggmenu" width="20" height="14">
+          <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-ggmenu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<button
   class="hahaha"
   aria-expanded="false"
   aria-controls="menu-container"
@@ -26,75 +69,137 @@
   </svg>
 </button>
 
-
-    <!-- MOBILE MENU (ALEXANDR) -->
-    <div class="mob-menu" data-menu-container>
-  <div class="mob-logo">
-    <a class="mob-logo-link link" href="../index.html">
-      <svg class="mob-logo-icon" width="14" height="14">
-        <use href="../img/logo50px.svg"></use>
-      </svg>
-      thewatchspot
-    </a>
-    <button type="button" class="mob-close-btn" data-close-menu>
-      <svg class="mob-close-icon" width="12" height="12">
-        <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-x"></use>
-      </svg>
-    </button>
-  </div>
-  <div class="mob-nav">
-    <ul class="mob-menu-list list">
-      <li class="mob-menu-item">
-        <a class="mob-menu-link link" href="">ABOUT US</a>
-      </li>
-      <li class="mob-menu-item">
-        <a class="mob-menu-link link" href="">CATALOG</a>
-      </li>
-      <li class="mob-menu-item">
-        <a class="mob-menu-link link" href="">SALE</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-    <!-- HERO (TARAS) -->
-    <!-- Mobile menu (You must connect it yourself) -->
     <section class="hero">
   <div class="hero-container container">
     <h1 class="hero-main">Welcome to our collection of premium watches</h1>
-    <div class="hero-slider-counter">
-      <picture class="hero-slider">
-        <source
-          media="(max-width: 375px)"
-          srcset="/project-group-18/assets/mob-slider-01-1x-fc507646.jpg 1x, /project-group-18/assets/mob-slider-01-2x-8f531a89.jpg 2x"
-        />
-        <source
-          media="(max-width: 768px)"
-          srcset="/project-group-18/assets/slider-01-1x-d1ae6a2a.jpg 1x, /project-group-18/assets/slider-01-1x-d1ae6a2a.jpg 2x"
-        />
-        <img
-          class="hero-slider-img"
-          src="/project-group-18/assets/slider-01-1x-d1ae6a2a.jpg"
-          alt="watch in collection"
-        />
-      </picture>
-      <div class="hero-btn-counter">
-        <div class="hero-block-btn">
-          <button class="hero-btn" type="submit"></button>
-          <button class="hero-btn" type="submit"></button>
-        </div>
-        <div class="hero-block-counter">
-          <span class="hero-counter">1 ------</span>
-          <span class="hero-counter">5</span>
+    <div class="hero-block">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture class="swiper-slider">
+              <source
+                media="(max-width: 375px)"
+                srcset="/project-group-18/assets/mob-slider-01-1x-fc507646.jpg 1x, /project-group-18/assets/mob-slider-01-2x-8f531a89.jpg 2x"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/project-group-18/assets/slider-01-1x-d1ae6a2a.jpg 1x, /project-group-18/assets/slider-01-1x-d1ae6a2a.jpg 2x"
+              />
+              <img
+                class="hero-slider-img"
+                src="/project-group-18/assets/slider-01-1x-d1ae6a2a.jpg"
+                alt="watch in collection"
+              /> </picture
+            >>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="swiper-slider">
+              <source
+                media="(max-width: 375px)"
+                srcset="data:image/jpeg;base64,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 1x, /project-group-18/assets/mob-slider-02-2x-d821dc55.jpg 2x"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/project-group-18/assets/slider-02-1x-2446037d.jpg 1x, /project-group-18/assets/slider-02-1x-2446037d.jpg 2x"
+              />
+              <img
+                class="hero-slider-img"
+                src="/project-group-18/assets/slider-02-1x-2446037d.jpg"
+                alt="watch in collection"
+              /> </picture
+            >>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="swiper-slider">
+              <source
+                media="(max-width: 375px)"
+                srcset="/project-group-18/assets/mob-slider-03-1x-e0563997.jpg 1x, /project-group-18/assets/mob-slider-03-2x-31b5e868.jpg 2x"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/project-group-18/assets/slider-03-1x-35617fa0.jpg 1x, /project-group-18/assets/slider-03-1x-35617fa0.jpg 2x"
+              />
+              <img
+                class="hero-slider-img"
+                src="/project-group-18/assets/slider-03-1x-35617fa0.jpg"
+                alt="watch in collection"
+              /> </picture
+            >>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="swiper-slider">
+              <source
+                media="(max-width: 375px)"
+                srcset="/project-group-18/assets/mob-slider-04-1x-a3113ccf.jpg 1x, /project-group-18/assets/mob-slider-04-2x-5ec5acf4.jpg 2x"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/project-group-18/assets/mob-slider-04-1x-a3113ccf.jpg 1x, /project-group-18/assets/mob-slider-04-1x-a3113ccf.jpg 2x"
+              />
+              <img
+                class="hero-slider-img"
+                src="/project-group-18/assets/mob-slider-04-1x-a3113ccf.jpg"
+                alt="watch in collection"
+              /> </picture
+            >>
+          </div>
+
+          <div class="swiper-slide">
+            <picture class="swiper-slider">
+              <source
+                media="(max-width: 375px)"
+                srcset="/project-group-18/assets/mob-slider-05-1x-4d16b5d6.jpg 1x, /project-group-18/assets/mob-slider-05-2x-1fd61976.jpg 2x"
+              />
+              <source
+                media="(max-width: 768px)"
+                srcset="/project-group-18/assets/slider-05-1x-70be8df5.jpg 1x, /project-group-18/assets/slider-05-1x-70be8df5.jpg 2x"
+              />
+              <img
+                class="hero-slider-img"
+                src="/project-group-18/assets/slider-05-1x-70be8df5.jpg"
+                alt="watch in collection"
+              /> </picture
+            >>
+          </div>
         </div>
       </div>
+      <div class="swiper-elements">
+        <div class="swiper-buttons">
+          <div class="prev-slide">
+            <svg class="slider-svg">
+              <use
+                href="../img/icons.svg#icon-chevron-left"
+                width="18px"
+                height="18px"
+              ></use>
+            </svg>
+          </div>
+          <div class="next-slide">
+            <svg class="slider-svg">
+              <use
+                href="../img/icons.svg#icon-chevron-right"
+                width="18px"
+                height="18px"
+              ></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="hero-block-counter">
+          <span class="hero-counter-1">01</span>
+          <span class="hero-counter-5">05</span>
+        </div>
+      </div>
+
+      <p class="hero-text">
+        Our watches are not just timepieces, but also an expression of your
+        personality and lifestyle. From classic designs to modern ones, we have
+        a watch to suit every taste and occasion.
+      </p>
     </div>
-    <p class="hero-text">
-      Our watches are not just timepieces, but also an expression of your
-      personality and lifestyle. From classic designs to modern ones, we have a
-      watch to suit every taste and occasion.
-    </p>
     <picture class="hero-picture">
       <source
         media="(max-width: 375px)"
@@ -117,8 +222,6 @@
   </div>
 </section>
 
-
-    <!-- SECTION-1 (VATALIY) -->
     <div class="section-first">
   <div class="first-tab">
     <h2 class="first-section-title">About us</h2>
@@ -158,87 +261,6 @@
         height="365px" alt="good watch"> -->
 </div>
 
-
-    <!-- MODAL (KSENIIA) -->
-    <div class="backdrop is-hidden" data-modal>
-  <div class="modal-wrap">
-    <button type="button" class="modal-close-btn" data-modal-close>
-      <svg class="modal-close-btn-icon">
-        <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-x"></use>
-      </svg>
-    </button>
-    <div class="product-description">
-      <img
-        class="product-description-img"
-        srcset="/project-group-18/assets/mob-product-01-2x-738d7992.jpg 2x"
-        src="/project-group-18/assets/mob-product-01-1x-947762b8.jpg"
-        alt="photo Tube Watch S42"
-        width="276"
-      />
-      <h3 class="product-title">Tube Watch S42 Date Steel With Black Case</h3>
-      <p class="price">€395</p>
-    </div>
-    <form class="form">
-      <label class="label"
-        ><span class="text-label">Full name</span>
-        <span class="label-form-wrap">
-          <input
-            type="text"
-            class="modal-input"
-            name="user_name"
-            placeholder="Enter your full name"
-            pattern=".{3,25}"
-            required
-          />
-        </span>
-      </label>
-      <label class="label"
-        ><span class="text-label">Email</span>
-        <span class="label-form-wrap">
-          <input
-            type="email"
-            class="modal-input"
-            name="user_email"
-            placeholder="Enter your email"
-            required
-          />
-          <!-- pattern="^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$;" -->
-        </span>
-      </label>
-      <label class="label"
-        ><span class="text-label">Card number</span>
-        <span class="label-form-wrap">
-          <input
-            type="number"
-            class="modal-input"
-            name="user_card"
-            placeholder="Enter card"
-          />
-        </span>
-      </label>
-      <label class="textarea"
-        ><span class="text-label">Comments</span>
-        <textarea
-          name="user_message"
-          placeholder="Enter your text"
-          class="label-form-message"
-        ></textarea>
-      </label>
-
-      <button type="submit" class="modal-btn">submit</button>
-      <div class="privacy-wrap">
-        <p class="privacy-text">
-          By clicking on “Send message” button, you agree to our
-          <a class="privacy-link" href="">Privacy Policy</a>, and allow Promodo
-          to use this information for marketing purposes.
-        </p>
-      </div>
-    </form>
-  </div>
-</div>
-
-
-    <!-- SECTION 2 (OLEG) -->
     <section class="container catalog-section">
   <h2 class="catalog-title">Catalog</h2>
 
@@ -876,8 +898,6 @@
   <button type="button" class="button-buy" data-modal-open>Buy now</button>
 </section>
 
-
-    <!-- SECTION 3 (VICTORIA) -->
     <section class="section">
   <div class="container section-new-watches">
     <h2 class="section-name">New Watches</h2>
@@ -928,8 +948,6 @@
   </div>
 </section>
 
-
-    <!-- SECTION 4 (ALEXANDR) -->
     <section class="sale-section section" id="sale">
   <div class="container">
     <h2 class="sale-title">Sale</h2>
@@ -1041,10 +1059,76 @@
   </div>
 </section>
 
+    <footer class="footer">
+  <div class="container">
+    <div class="footer-tab-position">
+      <!-- <div class="footer-mob-position"> -->
+      <div>
+        <a href="./index.html" class="footer-logo-link">
+          <svg class="footer-logo" width="50" height="50">
+            <use href="/project-group-18/assets/logo50px-ca9a9269.svg"></use>
+          </svg>
+        </a>
+        <a href="tel:+380684439426" class="footer-tel">+380 (68) 443-94-26</a>
+        <addres class="footer-adr">
+          1678 S. Pioneer Road<br />
+          Salt Lake City<br />
+          UT 84104
+        </addres>
+      </div>
+      <ul class="footer-list list flex menu">
+        <li class="footer-item">
+          <a class="header-link link" href="">About Us</a>
+        </li>
+        <li class="footer-item">
+          <a class="header-link link" href="">Catalog</a>
+        </li>
+        <li class="footer-item">
+          <a class="header-link link" href="">Sale</a>
+        </li>
+      </ul>
+      <!-- </div> -->
+      <ul class="footer-icon-list">
+        <li class="footer-icon-item">
+          <a class="footer-icon-link" href="">
+            <svg class="social-logo">
+              <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-item">
+          <a class="footer-icon-link" href="">
+            <svg class="social-logo">
+              <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-icon-item">
+          <a class="footer-icon-link" href="">
+            <svg class="social-logo">
+              <use href="/project-group-18/assets/icons-02a1ebe7.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-down">
+      <p class="copyright">©2022 The Watch Spot. All rights reserved.</p>
+      <ul class="copyright-list flex">
+        <li class="copyright-item">
+          <a class="copyright-link" href="">Privacy Policy</a>
+        </li>
+        <li class="copyright-item">
+          <a class="copyright-link" href="">Terms of Service</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
-    <!-- FOOTER (DMITRIY) -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
-
     
     
   </body>
