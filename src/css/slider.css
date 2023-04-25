@@ -1,92 +1,81 @@
-
-.swiper-block { 
-  
-}
-
-
 .swiper {
   width: 266px;
   height: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   margin-left: 0;
 }
 
-
 .swiper-elements {
-    display: flex;
-    gap: 116px;
+  display: flex;
+  gap: 116px;
+  align-items: end;
 }
 
-
 .swiper-buttons {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .prev-slide {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #FFFFFF;
-    border-radius: 8px;
-    display: flex;
-        align-items: center;
-        justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .next-slide {
-    width: 32px;
-    height: 32px;
-    border: 1px solid #FFFFFF;
-    border-radius: 8px;
-    display: flex;
-        align-items: center;
-        justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slider-svg {
-    
-    width: 18px;
-    height: 18px;
-    stroke: #FFFFFF;
+  width: 18px;
+  height: 18px;
+  stroke: #ffffff;
 }
 
 .hero-block-counter {
-    margin-top: 12px;
 }
 
 .hero-counter-1,
 .hero-counter-5 {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    letter-spacing: -0.02em;
-    color: var(--sec-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--sec-text-color);
 }
 
 .hero-counter-5:before {
-    display: inline-block;
-    content: '';
-    width: 32px;
-    height: 1px;
-    border: 1px solid #FFFFFF;
-    vertical-align: middle;
-    margin-left: 6px;
-    margin-right: 6px;
+  display: inline-block;
+  content: '';
+  width: 32px;
+  height: 1px;
+  border: 1px solid #ffffff;
+  vertical-align: middle;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
-
 @media screen and (min-width: 768px) {
- .swiper {
-   width: 436px;
-   height: 225px;
- }  
+  .swiper {
+    width: 436px;
+    height: 225px;
+  }
 
- .swiper-elements {
-     display: flex;
-     gap: 285px;
- }
+  .swiper-elements {
+    display: flex;
+    gap: 285px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-
 }
