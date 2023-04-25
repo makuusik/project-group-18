@@ -1,0 +1,254 @@
+.div {
+  display: block;
+}
+.link {
+  text-decoration: none;
+}
+.catalog-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.catalog-section {
+  position: relative;
+  max-width: 375px;
+}
+
+.catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: calc(40 / 32);
+  letter-spacing: -0.02em;
+  padding-bottom: 40px;
+}
+
+.wrapper {
+  padding-top: 14px;
+  padding-left: 16px;
+}
+.catalog-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  color: #141414;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-top: 14px;
+}
+.euro-price {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+}
+/* .catalog-list-item {
+  width: 100%;
+} */
+.overlay {
+  background-color: var(--accent-color);
+  color: var(--sec-text-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(0, 100%);
+  content: '';
+  overflow: auto;
+  height: 360px;
+  width: 335px;
+  position: absolute;
+  padding: 46px 59px 40px 40px;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  overflow-y: hidden;
+}
+
+.catalog-item:hover .overlay,
+.catalog-item:focus .overlay {
+  transform: translate(0, 0);
+  content: '';
+}
+.catalog-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-item-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-title {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.overlay-text {
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.01em;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.overlay-title {
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  cursor: pointer;
+  opacity: 0;
+  /* stroke: #1414141a; */
+  stroke: papayawhip;
+}
+
+.overlay-desc {
+  margin-bottom: 20px;
+}
+
+.picture-flex {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.catalog-item:hover .heart-icon,
+.catalog-item:focus .heart-icon {
+  opacity: 1;
+}
+
+.button-buy {
+  background: #1e2827;
+  border-radius: 8px;
+  padding: 14px 28px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  border: none;
+  text-transform: uppercase;
+  color: var(--sec-text-color);
+  display: block;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 40px;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+  border: white;
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+  .catalog-section {
+    max-width: 365px;
+    padding-bottom: 80px;
+  }
+
+  .catalog-list-text {
+    width: 335px;
+  }
+  .catalog-list-item:nth-child(n + 9) {
+    display: none;
+  }
+
+  img {
+    width: 336px;
+    height: 360px;
+  }
+
+  .overlay {
+    padding: 46px 59px 40px 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .catalog-section {
+    max-width: 734px;
+    padding-bottom: 128px;
+  }
+  .catalog-list {
+    flex-wrap: wrap;
+    column-gap: 32px;
+    flex-direction: row;
+  }
+  .catalog-list-text {
+    width: 335px;
+  }
+  .catalog-list-item {
+    /* flex-basis: calc((100% - 32px) / 2); */
+    width: 336px;
+  }
+  .catalog-list-item:nth-child(n + 9) {
+    display: none;
+  }
+
+  .overlay {
+    padding: 40px 60px 40px 40px;
+  }
+
+  img {
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1206px;
+  }
+
+  .catalog-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .catalog-list {
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 60px;
+    flex-direction: row;
+  }
+
+  .catalog-list-item {
+    /* flex-basis: calc((100% - 24px) / 4); */
+    width: 276px;
+  }
+
+  .catalog-list-item:nth-child(n + 9) {
+    display: block;
+  }
+
+  .catalog-list-text {
+    width: 276px;
+  }
+
+  .picture-flex {
+    padding: 0;
+  }
+
+  .overlay {
+    padding: 26px 20px 20px 20px;
+    width: 276px;
+    height: 325px;
+  }
+
+  .overlay-desc {
+    margin-bottom: 26px;
+  }
+
+  img {
+    width: 276px;
+    height: 325px;
+  }
+}

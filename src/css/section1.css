@@ -10,7 +10,7 @@ p {
   padding-right: 15px;
 }
 
-.section-title {
+.first-section-title {
   font-weight: 600;
   font-size: 32px;
   line-height: 1.25;
@@ -45,12 +45,17 @@ p {
 @media screen and (min-width: 375px) {
   .section-first {
     width: 365px;
+    padding-top: 40px;
+    padding-bottom: 80px;
   }
 
   img {
+    object-fit: cover;
+  }
+
+  .img-gif {
     width: 335px;
     height: 365px;
-    object-fit: cover;
   }
 }
 
@@ -59,6 +64,8 @@ p {
     width: 734px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 64px;
+    padding-bottom: 128px;
   }
 
   .first-tab {
@@ -66,7 +73,7 @@ p {
     width: 100%;
   }
 
-  .section-title {
+  .first-section-title {
     display: block;
     font-size: 40px;
     line-height: 1.1;
@@ -94,9 +101,12 @@ p {
   }
 
   img {
+    object-fit: cover;
+  }
+
+  .img-gif {
     width: 704px;
     height: 465px;
-    object-fit: cover;
   }
 }
 
@@ -105,10 +115,13 @@ p {
     width: 1206px;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
-  .section-title {
+  .first-section-title {
     margin-right: 110px;
+    width: 174px;
   }
 
   .section-list {
@@ -124,7 +137,7 @@ p {
     min-width: 380px;
   }
 
-  img {
+  .img-gif {
     margin-left: auto;
     width: 892px;
     height: 500px;

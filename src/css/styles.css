@@ -1,11 +1,15 @@
 /* Import Styles */
 @import url('./header.css');
+@import url('./mobile-menu.css');
 @import url('./hero.css');
 @import url('./section1.css');
 @import url('./section2.css');
 @import url('./section3.css');
 @import url('./section4.css');
 @import url('./footer.css');
+@import url('./slider.css');
+@import url('./modal.css');
+
 
 /* Upload Fonts */
 @font-face {
@@ -51,7 +55,6 @@ body {
 }
 
 /* Some tools */
-
 h1,
 h2,
 h3,
@@ -70,8 +73,9 @@ ul {
 }
 
 img {
-  max-width: 100%;
+  /* max-width: 100%; */
   display: block;
+  /* height: auto; */
 }
 
 .list {
@@ -79,8 +83,8 @@ img {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
