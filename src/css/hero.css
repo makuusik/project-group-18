@@ -54,20 +54,6 @@
   width: 32px;
 }
 
-.hero-text {
-  align-self: flex-end;
-  width: 248px;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-right: 20px;
-
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 1.29;
-  letter-spacing: -0.02em;
-  color: var(--sec-text-color);
-}
-
 .hero-counter {
   font-weight: 400;
   font-size: 14px;
@@ -77,9 +63,14 @@
 }
 
 .hero-text {
+  order: 2;
   align-self: flex-end;
   width: 248px;
+
+  margin-top: 40px;
   margin-bottom: 40px;
+
+  align-self: flex-end;
 
   font-weight: 300;
   font-size: 14px;
@@ -94,9 +85,10 @@
 }
 
 .hero-picture {
+  order: 3;
   height: 410px;
   width: 335px;
-  margin: 0 auto;
+  margin: 0;
   height: 410px;
   width: 335px;
 }
@@ -114,8 +106,34 @@
     max-width: 734px;
   }
 
+  .hero-picture {
+    order: initial;
+  }
+
+  .hero-text {
+    order: initial;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .hero-text-fix {
+    margin-top: 65px;
+    margin-left: 20px;
+    width: 248px;
+    height: 108px;
+  }
+
+  .hero-block-counter {
+    display: flex;
+  }
+
+  .hero-block-fix {
+    display: flex;
+    margin-bottom: 40px;
+  }
+
   .hero-container {
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding-top: 60px;
@@ -123,7 +141,7 @@
   }
 
   .hero-main {
-    width: 653px;
+    /* width: 653px; */
     font-size: 60px;
     line-height: 1.03;
     letter-spacing: -0.04em;
@@ -146,9 +164,11 @@
   .hero-text {
     align-self: flex-start;
     width: 248px;
-    margin-left: 20px;
-    margin-top: 71px;
-    margin-bottom: 0;
+    margin-left: auto;
+    margin-top: 65px;
+    /* margin-left: 20px;
+    margin-top: 65px;
+    margin-bottom: 0; */
   }
 
   .hero-picture {
@@ -162,7 +182,8 @@
   }
 
   .hero-container {
-    justify-content: space-between;
+    flex-direction: row;
+    /* justify-content: space-between; */
     padding-top: 60px;
     padding-bottom: 80px;
   }
@@ -178,15 +199,24 @@
   }
 
   .hero-text {
-    order: 2;
+    order: initial;
     margin-top: 0;
     width: 282px;
-    margin-left: 0;
+    margin-left: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.29;
+
+    letter-spacing: -0.02em;
   }
 
   .hero-picture {
     order: 4;
     width: 676px;
     height: 394px;
+    margin-left: auto;
   }
 }
