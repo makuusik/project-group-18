@@ -5,6 +5,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  z-index: 2;
 }
 
 .mob-menu {
