@@ -2,11 +2,10 @@
 .flex {
     display: flex;
   }
-  
   .link {
     color: var(--sec-text-color);
   }
-  
+
   li {
     list-style-type: none;
   }
@@ -122,9 +121,5 @@
   }
   
   @media (min-width: 1280px) {
-  /* .header {
-    padding-left: 112px;
-    padding-right: 112px;
-  } */
   }
   
