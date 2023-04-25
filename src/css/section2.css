@@ -153,6 +153,9 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .catalog-section {
     max-width: 365px;
+  }
+
+  .section-second {
     padding-bottom: 80px;
   }
 
@@ -181,8 +184,12 @@
 @media screen and (min-width: 768px) {
   .catalog-section {
     max-width: 734px;
+  }
+
+  .section-second {
     padding-bottom: 128px;
   }
+
   .catalog-list {
     flex-wrap: wrap;
     column-gap: 32px;
@@ -218,7 +225,7 @@
     max-width: 1206px;
   }
 
-  .catalog-section {
+  .section-second {
     padding-top: 80px;
     padding-bottom: 80px;
   }

@@ -3,9 +3,10 @@ p {
   margin: 0;
 }
 
-.section-first {
+.sec-first-container {
   width: 100%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -44,9 +45,16 @@ p {
 
 @media screen and (min-width: 375px) {
   .section-first {
-    width: 365px;
     padding-top: 40px;
     padding-bottom: 80px;
+  }
+
+  .sec-first-container {
+    width: 365px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   img {
@@ -61,11 +69,18 @@ p {
 
 @media screen and (min-width: 768px) {
   .section-first {
-    width: 734px;
-    padding-left: 15px;
-    padding-right: 15px;
     padding-top: 64px;
     padding-bottom: 128px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sec-first-container {
+    width: 734px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .first-tab {
@@ -112,11 +127,16 @@ p {
 
 @media screen and (min-width: 1280px) {
   .section-first {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .sec-first-container {
     width: 1206px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .first-section-title {
