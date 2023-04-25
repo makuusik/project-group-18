@@ -107,13 +107,6 @@ a {
 
 .header-tel {
   display: none;
-
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 1.33;
-
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .mob-btn {
