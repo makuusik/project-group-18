@@ -1,14 +1,18 @@
 /* Import Styles */
+@import url('./header.css');
 @import url('./mobile-menu.css');
+
 @import url('./hero.css');
+@import url('./slider.css');
+
 @import url('./section1.css');
 @import url('./section2.css');
 @import url('./section3.css');
-@import url('./section4.css');
-@import url('./footer.css');
-@import url('./slider.css');
 @import url('./modal.css');
-@import url('./header.css');
+
+@import url('./section4.css');
+
+@import url('./footer.css');
 
 /* Upload Fonts */
 @font-face {
