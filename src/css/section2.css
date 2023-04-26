@@ -55,7 +55,7 @@
   transform: translate(0, 100%);
   content: '';
   overflow: auto;
-  height: 360px;
+  height: 361px;
   width: 335px;
   position: absolute;
   padding: 46px 59px 40px 40px;
@@ -257,7 +257,7 @@
   .overlay {
     padding: 26px 20px 20px 20px;
     width: 276px;
-    height: 325px;
+    height: 326px;
   }
 
   .overlay-desc {
