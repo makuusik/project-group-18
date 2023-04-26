@@ -25,6 +25,7 @@
 
 .sale-gallery {
   max-height: 350px;
+  margin-bottom: 40px;
 
   display: flex;
   gap: 20px;
@@ -75,11 +76,12 @@
 .sale-description {
   position: relative;
 
-  padding: 08px 0;
+  padding-top: 8px;
 
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
+
   letter-spacing: -0.02em;
   text-transform: uppercase;
 
@@ -113,10 +115,11 @@
 }
 
 .sale-info-text {
-  margin-top: 09px;
+  margin-top: 17px;
 
+  font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 1.29;
   letter-spacing: -0.01em;
 
   color: rgba(20, 20, 20, 0.5);
@@ -128,6 +131,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
+
   letter-spacing: -0.02em;
 
   color: #141414;
@@ -196,8 +200,15 @@
   }
 
   .sale-heading {
+    font-weight: 400;
     font-size: 38px;
     line-height: 1.05;
+
+    letter-spacing: -0.02em;
+
+    /* black */
+
+    color: #141414;
   }
 
   .sale-wrapper {
@@ -207,6 +218,30 @@
   .sale-item {
     min-width: 146px;
     max-height: 146px;
+  }
+
+  .sale-info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    /* or 129% */
+
+    letter-spacing: -0.01em;
+
+    color: rgba(20, 20, 20, 0.5);
+  }
+
+  .sale-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    /* black */
+
+    color: #141414;
   }
 }
 
@@ -240,5 +275,40 @@
 
   .sale-gallery {
     margin-bottom: 40px;
+  }
+
+  .sale-heading {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 1.05;
+
+    letter-spacing: -0.02em;
+
+    /* black */
+
+    color: #141414;
+  }
+
+  .sale-description {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.33;
+
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+
+    color: #141414;
+  }
+
+  .sale-info-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+
+    letter-spacing: -0.01em;
+
+    color: rgba(20, 20, 20, 0.5);
   }
 }
