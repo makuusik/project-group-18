@@ -5,8 +5,14 @@ const swiper = new Swiper('.mySwiper', {
   keyboard: {
     enabled: true,
   },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
   navigation: {
     nextEl: '.next-slide',
     prevEl: '.prev-slide',
   },
 });
+
+
