@@ -113,7 +113,7 @@
   cursor: pointer;
   opacity: 0;
   /* stroke: #1414141a; */
-  stroke: papayawhip;
+  stroke: white;
 }
 
 .overlay-desc {
