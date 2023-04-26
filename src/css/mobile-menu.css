@@ -70,7 +70,7 @@
 }
 
 .mob-logo-link.link {
-  margin-right: auto;
+  margin-right: 220px;
   display: flex;
   align-items: center;
 
@@ -82,8 +82,7 @@
 .mob-logo {
   display: flex;
   width: 365px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0;
   margin-left: auto;
   margin-right: auto;
 }
