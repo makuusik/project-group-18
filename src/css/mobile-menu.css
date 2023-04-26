@@ -24,7 +24,7 @@
   background-color: var(--accent-color);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   transition: opacity cubic-bezier(0.33, 0.47, 0.77, 0.49),
     visibility cubic-bezier(0.33, 0.47, 0.77, 0.49);
@@ -53,6 +53,7 @@
 }
 
 .mob-nav {
+  margin-top: 200px;
   display: flex;
   justify-content: center;
   text-align: center;
