@@ -26,12 +26,6 @@
   overflow: auto;
 }
 
-.mob-logo-link {
-  color: var(--sec-text-color);
-  font-size: 12px;
-  line-height: calc(12.3 / 12);
-}
-
 .mob-logo-icon {
   stroke: var(--sec-text-color);
   width: 14px;
@@ -71,4 +65,13 @@
 
 .mob-menu-link {
   color: var(--sec-text-color);
+}
+
+.mob-logo-link.link {
+  display: flex;
+  align-items: center;
+
+  color: var(--sec-text-color);
+  font-size: 12px;
+  line-height: calc(12.3 / 12);
 }
