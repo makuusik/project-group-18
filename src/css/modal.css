@@ -223,7 +223,9 @@ input:not(:placeholder-shown):invalid {
 }
 @media screen and (min-width: 768px) {
   .modal-wrap {
+    height: auto;
     top: 50%;
+    overflow: hidden;
     display: flex;
     width: 744px;
     padding: 40px;
@@ -282,6 +284,8 @@ input:not(:placeholder-shown):invalid {
     padding: 40px;
     gap: 40px;
     border-radius: 8px;
+    overflow: hidden;
+    height: auto;
   }
 
   .label {
