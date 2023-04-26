@@ -76,6 +76,10 @@ ul {
   list-style: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   /* max-width: 100%; */
   display: block;
