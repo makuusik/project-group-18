@@ -17,6 +17,7 @@
 }
 
 .prev-slide {
+  opacity: 0.5;
   width: 32px;
   height: 32px;
   border: 1px solid #ffffff;
@@ -27,6 +28,7 @@
 }
 
 .next-slide {
+  opacity: 0.5;
   width: 32px;
   height: 32px;
   border: 1px solid #ffffff;
@@ -34,6 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.next-slide:hover,
+.prev-slide:hover,
+.next-slide:focus,
+.prev-slide:focus {
+  opacity: 1;
+  transition: opacity, var(--duration);
 }
 
 .slider-svg {
