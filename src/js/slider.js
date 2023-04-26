@@ -8,6 +8,15 @@ const swiper = new Swiper('.mySwiper', {
   pagination: {
     el: '.swiper-pagination',
     type: 'fraction',
+    renderFraction: function (currentSlide, totalSlide) {
+      return (
+        '<span class="' +
+        currentSlide +
+        '"></span><span class=""></span><span class="' +
+        totalSlide +
+        '"></span>'
+      );
+    },
   },
   navigation: {
     nextEl: '.next-slide',
